@@ -26,6 +26,29 @@
 
 The dataset was obtained from Kaggle and it consists of 3333 customers and 21 attributes giving details of various aspects of customer behaviour and service usage.The attributes include account length,area code,number of customer service calls and indicators of subcription to international and voicemail plans.The target variable "Churn" indicates whether a customer has discontinued the service.
 
+The columns are as follows:
+State:the state the user lives in.
+account length:the number of days the user has this account.
+area code:the code of area the user lives in.
+phone number:the phone number of the user.
+international plan:true if the user has international plan,otherwise.
+voice mail plan :true if the user has the voice plan,otherwise false.
+number vmail messages: the number of voicemail messages the user has sent the user has sent.
+totay day minutes:total number of minutes the user has the been in cells during the day.
+total day calls :total number of minutes the user has been in calls during the day
+total eve calls : total amount of money the user has been in calls during the evening.
+total eve charge:total amount of money the user has been in calls during the night.
+total night minutes: total number of minutes the user has been in calls during the night.
+total night calls: total number of calls the user was charged by syriatel company during the evening 
+total night charge:total amount of money the user was charged by syriatel 
+total intl minutes:total number of minutes the user has been in international calls
+total int calls:total number of international calls the user has done 
+total intl charger:total amount of money the user was charged by the syriatel company for calls during the international calls
+customer service calls :number of customer service calls the user has done.
+churn: true if the user terminated the contract ,otherwise false.
+
+
+
 ####  Data analysis
 
 
@@ -225,7 +248,8 @@ State
 
 #### Feature Importance in Random Forest 
 
-![Churn_distribution](Images/K.PNG)
+![Churn_distribution](Images/M.PNG)
+
 
 
 ### Findings
@@ -239,6 +263,11 @@ State
 4. International Plan(Yes/No)- Customers with international plans showed a higher tendency to churn.
 
 5. Total International Charge -Higher international call charges impact churn behaviour.
+
+### Conclusion
+- The feature importance analysis reveals the factors influencing customer churn.Higher total day and international call charges increases churn probability .Frequent customer service calls indicate dissatisfaction,leading to a higher churn risk.
+
+- customers with international plans are more likely to leave and longer evening call durations impact retention.
 
 ### Recommendations
 
